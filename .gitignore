@@ -1,0 +1,4 @@
+venv/
+.idea/
+/new_sign_language_model.h5
+/testing.py

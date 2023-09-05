@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <link href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet" type="text/css">
+    <title>WEB AI | Sign Language</title>
+
+</head>
+<body>
+<nav class="box-shadow" id="navbar">
+      <span class="logoDiv" onclick="window.location='/'">
+        <img alt="logo" height="50px" src="{{url_for('static', filename='bitsdomain logo.jpg')}}"/>
+      </span>
+
+</nav>
+<div class="blueDiv"></div>
+
+<main>
+    <div class="text-center">
+        <h1 class="title_lg">Sign Language Detection</h1>
+        <p class="hd_p">Use this tool to understand sign language </p>
+    </div>
+    <br><br><br><br>
+    <div class="text-center">
+    <img src="{{ url_for('video_feed') }}">
+<!--    <textarea class="optextarea" cols="50" rows="4"></textarea>-->
+    </div>
+
+
+</main>
+</body>
+
+</html>
