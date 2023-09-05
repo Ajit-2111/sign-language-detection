@@ -98,8 +98,3 @@ def video_feed():
 def video_feed_prediction():
     global videoprediction
     return videoprediction
-
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
